@@ -1,0 +1,9 @@
+# One ruff config for server/, scripts/ and eval/.
+line-length = 110
+target-version = "py311"
+
+[lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[lint.isort]
+known-first-party = ["pulselens", "tests"]

@@ -1,0 +1,31 @@
+# Session data and models never go in git (CLAUDE.md rule 5, 7)
+data/
+models/
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Node / client
+node_modules/
+client/dist/
+client/playwright-report/
+client/test-results/
+client/public/models/
+client/public/mediapipe/
+
+# Eval outputs (regenerated)
+eval/out/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
